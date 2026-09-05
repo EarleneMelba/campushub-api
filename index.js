@@ -20,3 +20,5 @@ sequelize.authenticate()
   .catch((err) => {
     console.error('❌ Unable to connect to the database:', err.message);
   });
+  const authRoutes = require('./routes/authRoutes');
+app.use('/api/auth', authRoutes);
