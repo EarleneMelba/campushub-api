@@ -5,7 +5,7 @@ require('./models/User');
 const app=express();
 app.use(express.json());
 
-const PORT= process.env.PORT ||  8081;
+const PORT= process.env.PORT || 8081;
 sequelize.authenticate()
   .then(() => {
     console.log('✅ Database connected successfully');
