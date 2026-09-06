@@ -1,11 +1,8 @@
 team project - dev A(personal)
 office work started
-<<<<<<< HEAD
 ooffice work started for 2nd
-=======
 
 work type 1: personal work started 
 work type 2:
  
 working person: 
->>>>>>> 55208d6d8c2a7c15cce8faa2739ba5a113ab9f85
