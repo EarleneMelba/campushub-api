@@ -2,6 +2,9 @@ team project - dev A(personal)
 office work started
 
 work type 1: personal work started 
-work type 2:
+work type 2: 
  
-working person: 
+Project: personal
+Developer: Earlene
+Status: In Progress
+Department: Backend Development
