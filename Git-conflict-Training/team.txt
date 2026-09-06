@@ -1,10 +1,10 @@
 team project - dev A(personal)
 office work started
+<<<<<<< HEAD
+ooffice work started for 2nd
+=======
 
 work type 1: personal work started 
 work type 2: 
  
-Project: personal
-Developer: Earlene
-Status: In Progress
-Department: Backend Development
+working person: 
