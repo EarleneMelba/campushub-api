@@ -3,6 +3,10 @@ office work started
 ooffice work started for 2nd
 
 work type 1: personal work started 
-work type 2:
+work type 2: 
  
+<<<<<<< HEAD
 working person: 
+=======
+working person: 
+>>>>>>> 46269f15d8b681e97b014aa59730ff9ecdabcf7a
