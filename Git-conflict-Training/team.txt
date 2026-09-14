@@ -1,18 +1,8 @@
 team project - dev A(personal)
 office work started
-<<<<<<< HEAD
 ooffice work started for 2nd
-=======
 
 work type 1: personal work started 
 work type 2: 
  
-<<<<<<< HEAD
-Project: personal
-Developer: Earlene
-Status: In Progress
-Department: Backend Development
-=======
 working person: 
->>>>>>> 55208d6d8c2a7c15cce8faa2739ba5a113ab9f85
->>>>>>> 618118efcb39e519374dd8b2675a7c4d4ee0c10f
