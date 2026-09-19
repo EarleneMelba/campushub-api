@@ -11,5 +11,9 @@
 - Learned: nodemon vs plain node (auto-restart on file changes)
 - Verified both failure cases (wrong email, wrong password) return clean 401s
 - Decided: JS first for CampusHub, TypeScript conversion after signup ticket
+- Built and connected signup/register endpoint (`POST /api/auth/signup`) in auth controller and routes
+- Integrated Swagger / OpenAPI 3.0 documentation using `swagger-ui-express` and `swagger-jsdoc` at `/api-docs`
+- Documented authentication endpoints (`signup` and `login`) with request/response schemas
+- Verified signup (success, missing fields, duplicate email) and login flows with JWT
 
-**Next:** Build signup/register endpoint (Ticket #2)
+**Next:** Protected routes & role-based access control (RBAC) middleware
