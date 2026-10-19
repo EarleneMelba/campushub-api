@@ -4,9 +4,9 @@ const sequelize = require('../config/db');
 
 const Branch = sequelize.define('Branch', {
     id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
-        autoIncrement: true,
     },
     name: {
         type: DataTypes.STRING,
