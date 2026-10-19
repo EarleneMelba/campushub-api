@@ -17,3 +17,12 @@
 - Verified signup (success, missing fields, duplicate email) and login flows with JWT
 
 **Next:** Protected routes & role-based access control (RBAC) middleware
+
+## Oct 19, 2026
+- Created models/index.js as the single place that registers models and associations
+- Fixed: Node resolves require('./models') to models/index.js, which didn't exist yet
+- Designed Institution, Branch and role structure from Pappa.ai domain knowledge (concepts only, own schema)
+- Decided: UUID ids everywhere, Create Institution v1 without transaction (logo/email parked)
+- Dropped and recreated tables to switch ids from integer to UUID
+
+**Next:** verify UUID columns in the DB, then roles groundwork (super_admin + role middleware), then Create Institution
