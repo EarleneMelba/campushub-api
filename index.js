@@ -1,7 +1,7 @@
 const express = require('express');
 const sequelize = require('./config/db');
 require('dotenv').config();
-require('./models/User');
+require('./models');
 const { swaggerUi, swaggerSpec } = require('./config/swagger');
 const authRoutes = require('./routes/authRoutes');
 
