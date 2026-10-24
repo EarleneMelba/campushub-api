@@ -26,3 +26,6 @@
 - Dropped and recreated tables to switch ids from integer to UUID
 
 **Next:** verify UUID columns in the DB, then roles groundwork (super_admin + role middleware), then Create Institution
+
+## Oct 24, 2026 
+todays progress
