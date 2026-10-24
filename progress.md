@@ -26,3 +26,15 @@
 - Dropped and recreated tables to switch ids from integer to UUID
 
 **Next:** verify UUID columns in the DB, then roles groundwork (super_admin + role middleware), then Create Institution
+
+## Oct 23, 2026
+- Set up the project on the office laptop: clone, fresh DB, own .env
+- Learned: the DB is rebuilt from code (sync + seed), so it never needs to be shared between machines
+- Learned: 401 = server doesn't know who you are, 403 = it knows you but you're not allowed
+- Wrote requireRole middleware (returns a middleware, so one file serves every role check)
+- Changed User role default from 'admin' to 'user' (least privilege)
+- Rewrote seed.js to create the super admin from .env, safe to run twice
+
+## Oct 24, 2026
+**Goal today:** super admin seeded, role middleware tested (401 / 403 / 200), commit, 1 GFG problem
+- Fixed: seed said env vars missing. Cause: the new lines weren't being read (env count was 7, not 9)
