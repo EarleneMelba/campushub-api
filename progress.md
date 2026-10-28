@@ -39,7 +39,14 @@ todays progress
 - Changed User role default from 'admin' to 'user' (least privilege)
 - Rewrote seed.js to create the super admin from .env, safe to run twice
 
-## Oct 24, 2026
-**Goal today:** super admin seeded, role middleware tested (401 / 403 / 200), commit, 1 GFG problem
-- Fixed: seed said env vars missing. Cause: the new lines weren't being read (env count was 7, not 9)
+## Oct 26, 2026
+- Updated Swagger UI & OpenAPI documentation at `/api-docs` to include all routes for testing:
+  - `POST /api/auth/signup` (user registration with default role 'user')
+  - `POST /api/auth/login` (authentication & JWT generation)
+  - `GET /api/auth/me` (tests `authMiddleware` for any authenticated user)
+  - `GET /api/auth/super-admin-only` (tests both `authMiddleware` and RBAC `requireRole('super_admin')`)
+- Added Bearer JWT authorization lock to Swagger (`security: [{ bearerAuth: [] }]`), enabling interactive "Authorize" and "Try it out"
+- Updated Swagger schemas with UUID format (switched from integer IDs), `TokenUserPayload`, `Institution`, and `Branch` models
+- Enabled `persistAuthorization: true` in Swagger UI so token remains stored in browser during testing
+- Documented all response status codes for testing: 200, 201, 400 (validation & duplicate errors), 401 (unauthorized), 403 (forbidden/insufficient permissions), and 500 (server errors)
 

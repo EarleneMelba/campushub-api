@@ -2,14 +2,14 @@ const express = require('express');
 const sequelize = require('./config/db');
 require('dotenv').config();
 require('./models');
-const { swaggerUi, swaggerSpec } = require('./config/swagger');
+const { swaggerUi, swaggerSpec, swaggerUiOptions } = require('./config/swagger');
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 app.use(express.json());
 
 // Swagger Documentation
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, swaggerUiOptions));
 app.get('/api-docs.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(swaggerSpec);
